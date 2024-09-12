@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+  /* font-weight: 400; */
+  margin: 0;
+  padding: 0;
+  color: #070707
+}
+
+.header {
+  padding: 33px 0;
+  border-bottom: 1px solid #828282;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #828282;
+}
+
+.nav a:hover {
+  color: #070707;
+}
+
+/* sub header */
+
+.bio {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  align-items: center;
+}
+
+.bio h1 {
+  font-size: 47px;
+}
+
+.lang {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+}
+
+.subHeader img {
+  width: 100%;
+}
+
+/* about me */
+
+.sectionTitle {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 17px;
+}
+
+
+.aboutMe {
+  text-align: center;
+  padding: 120px 0 110px 0;
+}
+
+.aboutMe p {
+  margin-bottom: 2rem;
+}
+
+/* skills */
+
+.skills {
+  padding-top: 91px;
+  padding-bottom: 110px;
+  
+}
+
+.skills p {
+  text-align: center;
+  
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 83px;
+}
+
+.tools img {
+  width: 166px;
+  height: 206px;
+}
+
+.skills .sectionTitle {
+  margin-bottom: 69px;
+}
+
+/* portfolio */
+
+.portfolio {
+  margin-top: 112px;
+  margin-bottom: 96px;
+}
+
+.portfolio .sectionTitle {
+  margin-bottom: 47px;
+}
+
+.portfolio img {
+  width: 100%;
+}
+
+.portfolio p {
+  text-align: center;
+  margin: 44px;
+  margin-bottom: 99px;
+}
+
+
+/* footer */
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+
+.footer__btn {
+  width: 180px;
+  height: 42px;
+  background-color:  rgb(1, 1, 1);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.footer__simple-text {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(130, 130, 130);
+  margin-top: 46px;
+  margin-bottom: 123px;
+
+}
+
+
