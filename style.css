@@ -1,11 +1,27 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
 * {
   box-sizing: border-box;
   font-size: 18px;
+
+
   /* font-weight: 400; */
+
+
   margin: 0;
   padding: 0;
-  color: #070707
+  color: #070707;
+  font-family: Gilroy-Medium;
+  font-weight: 400;
+  font-style: normal;
 }
+
+
+.bgGrey {
+  background-color: #f6f6f6;
+}
+
+/* header */
 
 .header {
   padding: 33px 0;
@@ -60,6 +76,10 @@
   text-align: center;
   font-size: 34px;
   margin-bottom: 17px;
+}
+
+.bgGrey {
+  background-color: #F6F6F6;
 }
 
 
@@ -169,4 +189,18 @@ footer img {
   height: 40px;
 }
 
+
+/* Style for hiding mobile */
+
+#navMb {
+  display: none;
+}
+
+#burger {
+  display: none;
+}
+
+.mainBannerMb {
+  display: none;
+}
 

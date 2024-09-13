@@ -1,0 +1,141 @@
+@media  screen and (max-width: 400px) {
+
+  body {
+      padding: 0;
+  }
+
+  #closeBtn {
+      width: 20px;
+  }
+
+  .nav {
+      display: none;
+  }
+
+  .container {
+      width: 100%;
+      padding: 0 29px 0 29px;
+  }
+
+  .lang {
+      display: none;
+  }
+
+  .mainBannerMb {
+      display: flex;
+      width: 100%;
+  }
+
+  .mainBanner {
+      display: none;
+  }
+
+  .bio {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .bio div {
+      padding-top: 65px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 23px;
+  }
+
+  #burger {
+      display: block;
+      width: 30px;
+      cursor: pointer;
+  }
+
+  /* Стили для боковой панели */
+  .navMb {
+      display: none;
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      padding: 66px 26px;
+      height: 200vh;
+  }
+
+  .navMb .nav {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 0;
+  }
+
+  .nav li img {
+      float: right;
+  }
+  .nav li {
+      list-style: none;
+      color: #828282;
+      font-size: 34px;
+      line-height: 42px;
+      margin-bottom: 68px;
+
+  }
+
+  .nav li:hover {
+      color: #070707;
+  }
+
+  .navMb .lang {
+      display: flex;
+      color: #828282;
+      transform: rotate(360deg);
+      margin-left: 90%;
+  }
+
+  /* About me Section */
+  .aboutSection {
+      padding: 81px 0 76px 0;
+  }
+
+  .sectionTitle {
+      margin-top: 0;
+  }
+
+  .skillsSection .sectionTitle {
+      margin-top: 83px;
+  }
+
+  .tools {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 70px;
+      margin-bottom: 18px;
+  }
+
+  .tools img {
+      margin-bottom: 80px;
+  }
+
+  /* skills */
+
+
+  /* footer */
+  footer .sectionTitle {
+      margin-top: 82px;
+  }
+
+  footer div {
+      margin-top: 48px;
+  }
+
+  footer .subText {
+      margin-bottom: 90px;
+  }
+
+  .socialIcons {
+      display: flex;
+      column-gap: 2.5rem;
+  }
+
+  .socialIcons img {
+      width: 40px;
+      height: 40px;
+  } 
+}

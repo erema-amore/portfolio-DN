@@ -4,9 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./media.css">
   <title>Portfolio</title>
+  <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
+  <div class="navMb" id="navMb">
+    <ul class="nav">
+      <li> <a href="#">Home</a> <img class="closeBtn" src="./assets/icons/close.jpg" alt=""></li>
+      <li> <a href="#">About me</a></li>
+      <li> <a href="#">Skills</a></li>
+      <li> <a href="#">Portfolio</a></li>
+      <li> <a href="#">Contacts</a></li>
+    </ul>
+    <span class="lang">RU <b> | ENG </b></span>
+  </div>
   <header class="container">
     <nav class="nav">
       <ul>
@@ -20,19 +36,26 @@
   </header>
 
 
-  <main class="container">
-    <section class="subHeader">
+  <main>
+    <section class="container subHeader">
       <div class="bio">
+        <div>
         <h1>Denis <br>
           Novik</h1>
+          <img src="./assets/icons/burger.jpg" 
+          id="burger"
+          alt="burger menu">
+        </div>
           <p>UX | UI designer <br>
             24 years old, Minsk</p>
             <span class="lang">RU | <b>ENG</b> </span>
       </div>
-      <img src="./assets/images/Group 2.1 (1).png" alt="">
+      <img src="./assets/images/Group 2.1 (1).png" alt="main banner">
+      <img class="mainBannerMb" src="./assets/images/mainBaannerBg.png" alt="main banner">
     </section>
-    <section class="aboutMe">
-      <h4 class="sectionTitle">About me</h4>
+    <section class="bgGrey aboutMe">
+      <div class="container">
+        <h3 class="sectionTitle">About me</h3>
       <p>Hi, I'm Denis – UX/UI designer from Minsk. <br> 
         I'm interested in design and everything connected with it.
       </p>
@@ -41,10 +64,12 @@
         
         <p>Ready to implement excellent projects <br>
          with wonderful people.</p>
+       
+      </div>
+      
         
     </section>
-
-    <section class="skills">
+    <section class="container skills">
       <h3 class="sectionTitle">Skills</h3>
       <p >I work in such programs as</p>
       <div class="tools">
@@ -54,14 +79,18 @@
         <img src="./assets/icons/figma.png" alt="figma">
       </div>
     </section>
-    <section class="portfolio">
-      <h3 class="sectionTitle">Portfolio</h3>
+    <section class="bgGrey portfolio">
+      <div class="container">
+        <h3 class="sectionTitle">Portfolio</h3>
       <img src="./assets/images/portfolio1.png" alt="portfolio1">
       <p><a href="#">Online fashion store - Homepage</a></p>
       <img src="./assets/images/portfolio2.png" alt="portfolio2">
       <p><a href="#">Reebok Store - Concept</a></p>
       <img src="./assets/images/portfolio3.png" alt="portfolio3">
       <p><a href="#">Braun Landing Page - Concept</a></p>
+
+      </div>
+      
     </section>
   </main>
 
@@ -82,5 +111,17 @@
     </section>
 
   </footer>
+  <script>
+    $(document).ready(() => {
+        //hide mobile menu
+        $("#closeBtn").click(() => {
+          $("#navMb").hide();
+        });
+        // show mobile menu
+        $("#burger").click(() => {
+          $("#navMb").show();
+        });
+      });
+  </script>
 </body>
 </html>
